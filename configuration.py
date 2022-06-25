@@ -39,5 +39,5 @@ class Config(object):
         self.pre_norm = True
 
         # Dataset
-        self.dir = '../coco'
+        self.dir = '/content/drive/MyDrive/Colab Notebooks/BanglaImageCaption/Data'
         self.limit = -1

@@ -60,8 +60,8 @@ class CocoCaption(Dataset):
 
         self.root = root
         self.transform = transform
-        self.annot = [(self._process(val['image_id']), val['caption'])
-                      for val in ann['annotations']]
+        self.annot = [(val['filename'], val['caption'][0])
+                      for val in ann]
         if mode == 'validation':
             self.annot = self.annot
         if mode == 'training':
@@ -98,17 +98,17 @@ class CocoCaption(Dataset):
 
 def build_dataset(config, mode='training'):
     if mode == 'training':
-        train_dir = os.path.join(config.dir, 'train2017')
+        train_dir = os.path.join(config.dir, 'Train')
         train_file = os.path.join(
-            config.dir, 'annotations', 'captions_train2017.json')
+            config.dir, 'TrainAnnotations.json')
         data = CocoCaption(train_dir, read_json(
             train_file), max_length=config.max_position_embeddings, limit=config.limit, transform=train_transform, mode='training')
         return data
 
     elif mode == 'validation':
-        val_dir = os.path.join(config.dir, 'val2017')
+        val_dir = os.path.join(config.dir, 'Val')
         val_file = os.path.join(
-            config.dir, 'annotations', 'captions_val2017.json')
+            config.dir, 'ValAnnotations.json')
         data = CocoCaption(val_dir, read_json(
             val_file), max_length=config.max_position_embeddings, limit=config.limit, transform=val_transform, mode='validation')
         return data
