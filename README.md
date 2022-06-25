@@ -3,15 +3,11 @@ Transformer Based Image Captioning in Bangla
 This Pytorch framework based repo is modified from CA:TR  https://github.com/saahiluppal/catr
 
 
-
-### Samples:
-
 <p align="center">
   <img src="test1.png" />
+  একজন নারী ও একটি শিশ আছে ।
 </p>
- একজন নারী ও একটি শিশ আছে ।
-
-
+ 
 
 # Dataset:
 Download the BanglaLekhaImageCaptions dataset here:
