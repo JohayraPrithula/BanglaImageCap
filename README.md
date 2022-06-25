@@ -62,7 +62,7 @@ https://colab.research.google.com/drive/1FntZFNf_O1fxlNMb6m-KQiUjxH8YQrHb?usp=sh
 ## Generate Captions:
 Run the the following file to generate captions for any image:
 ```
-https://drive.google.com/file/d/1aRnCdzlkIXdruuvTr3gj0Ju0OmB5j3_7/view?usp=sharing
+https://colab.research.google.com/drive/1bMB7nF20IurPTLKQSrzWFQRaiIv1VWOt?usp=sharing
 ```
 
 # License
