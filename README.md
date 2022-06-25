@@ -7,7 +7,7 @@ This Pytorch framework based repo is modified from CA:TR  https://github.com/saa
 ### Samples:
 
 <p align="center">
-  <img src=".github/test1.png" />
+  <img src="test1.png" />
 </p>
  একজন নারী ও একটি শিশ আছে ।
 
