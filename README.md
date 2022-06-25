@@ -5,6 +5,7 @@ This Pytorch framework based repo is modified from CA:TR  https://github.com/saa
 
 <p align="center">
   <img src="test1.png" />
+  <br>
   একজন নারী ও একটি শিশ আছে ।
 </p>
  
